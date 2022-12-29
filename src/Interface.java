@@ -12,12 +12,12 @@ public class Interface {
             switch (choice) {
                 case ("1") -> {
                     Main.getAllPosition();
-                    System.out.print("Для продолжения нажмите Enter.");
+                    System.out.print("Для продолжения нажмите Enter");
                     input.nextLine();
                 }
                 case ("2") -> {
                     getSearchChoice();
-                    System.out.print("Для продолжения нажмите Enter.");
+                    System.out.print("Для продолжения нажмите Enter");
                     input.nextLine();
                 }
                 case ("x"), ("х") -> System.exit(0);
@@ -42,35 +42,35 @@ public class Interface {
                     System.out.print("Введите бренд ноутбука: ");
                     String brand = input.nextLine();
                     Main.searchBrand(brand, Main.laptops);
-                    System.out.print("Для продолжения нажмите Enter.");
+                    System.out.print("Для продолжения нажмите Enter");
                     input.nextLine();
                 }
                 case ("2") -> {
                     System.out.print("Введите модель ноутбука: ");
                     String model = input.nextLine();
                     Main.searchModel(model, Main.laptops);
-                    System.out.print("Для продолжения нажмите Enter.");
+                    System.out.print("Для продолжения нажмите Enter");
                     input.nextLine();
                 }
                 case ("3") -> {
                     System.out.print("Введите размер экрана: ");
                     String screen = input.nextLine();
                     Main.searchScreen(screen, Main.laptops);
-                    System.out.print("Для продолжения нажмите Enter.");
+                    System.out.print("Для продолжения нажмите Enter");
                     input.nextLine();
                 }
                 case ("4") -> {
                     System.out.print("Введите объем памяти: ");
                     String memory = input.nextLine();
                     Main.searchMemory(memory, Main.laptops);
-                    System.out.print("Для продолжения нажмите Enter.");
+                    System.out.print("Для продолжения нажмите Enter");
                     input.nextLine();
                 }
                 case ("5") -> {
                     System.out.print("Введите цвет ноутбука: ");
                     String color = input.nextLine();
                     Main.searchColor(color, Main.laptops);
-                    System.out.print("Для продолжения нажмите Enter.");
+                    System.out.print("Для продолжения нажмите Enter");
                     input.nextLine();
                 }
                 case ("x"), ("х") -> getMenu();
