@@ -35,6 +35,7 @@ public class Laptops {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(brand, model, screenSize, memorySize, color, os, serialNumber);
     }
 }

@@ -42,37 +42,37 @@ public class Main {
     }
 
     public static void searchModel(String model, List<Laptops> laptops) {
-        for (int i = 0; i < laptops.size(); i++) {
-            String s = laptops.get(i).toString().toLowerCase();
+        for (Laptops laptop : laptops) {
+            String s = laptop.toString().toLowerCase();
             if (s.contains(model.toLowerCase())) {
-                System.out.println(laptops.get(i));
+                System.out.println(laptop);
             }
         }
     }
 
     public static void searchScreen(String screen, List<Laptops> laptops) {
-        for (int i = 0; i < laptops.size(); i++) {
-            String s = laptops.get(i).toString().toLowerCase();
+        for (Laptops laptop : laptops) {
+            String s = laptop.toString().toLowerCase();
             if (s.contains(screen.toLowerCase() + "\"")) {
-                System.out.println(laptops.get(i));
+                System.out.println(laptop);
             }
         }
     }
 
     public static void searchMemory(String memory, List<Laptops> laptops) {
-        for (int i = 0; i < laptops.size(); i++) {
-            String s = laptops.get(i).toString().toLowerCase();
+        for (Laptops laptop : laptops) {
+            String s = laptop.toString().toLowerCase();
             if (s.contains(memory.toLowerCase() + "гб")) {
-                System.out.println(laptops.get(i));
+                System.out.println(laptop);
             }
         }
     }
 
     public static void searchColor(String color, List<Laptops> laptops) {
-        for (int i = 0; i < laptops.size(); i++) {
-            String s = laptops.get(i).toString().toLowerCase();
+        for (Laptops laptop : laptops) {
+            String s = laptop.toString().toLowerCase();
             if (s.contains(color.toLowerCase())) {
-                System.out.println(laptops.get(i));
+                System.out.println(laptop);
             }
         }
     }
